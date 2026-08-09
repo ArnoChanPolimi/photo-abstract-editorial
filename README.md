@@ -9,13 +9,14 @@ The skill includes the complete prompt in both Chinese and English.
 <table>
   <tr>
     <td><img src="./assets/examples/case-1.jpg" width="100%"></td>
-    <td><img src="./assets/examples/case-2.jpg" width="100%"></td>
+    <td><img src="./assets/examples/case-7.jpg" width="100%"></td>
     <td><img src="./assets/examples/case-3.jpg" width="100%"></td>
   </tr>
   <tr>
     <td><img src="./assets/examples/case-8.jpg" width="100%"></td>
+    <td><img src="./assets/examples/case-2.jpg" width="100%"></td>
     <td><img src="./assets/examples/case-6.jpg" width="100%"></td>
-    <td><img src="./assets/examples/case-7.jpg" width="100%"></td>
+   
   </tr>
 </table>
 
