@@ -1,6 +1,8 @@
 ## 声明
 Free for personal, educational and non-commercial use. Commercial use requires prior authorization. If you build something with these Skills, attribution and @AM. are greatly appreciated.
 
+在这里吐槽一下，真的很无语这几天，被人抄袭，甚至有人拿这个东西去卖，我真的无语！
+
 # Photo Abstract Editorial
 
 将一张照片转化为“原始摄影区域 + 抽象记忆面板 + 诗意英文标题”的竖向编辑作品的 Codex Skill。它保留照片的真实内容，并仅从照片本身提炼空间关系、构图节奏和色彩关系；它不是滤镜、照片重画或风格迁移。
