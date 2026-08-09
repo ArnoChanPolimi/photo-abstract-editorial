@@ -6,7 +6,7 @@ The skill includes the complete prompt in both Chinese and English.
 
 ## 示例图片（原图均为本人拍摄）
 
-<table>
+<!-- <table>
   <tr>
     <td><img src="./assets/examples/case-1.jpg" width="100%"></td>
     <td><img src="./assets/examples/case-3.jpg" width="100%"></td>
@@ -18,8 +18,16 @@ The skill includes the complete prompt in both Chinese and English.
     <td><img src="./assets/examples/case-6.jpg" width="100%"></td>
    
   </tr>
-</table>
-
+</table> -->
+<p align="center">
+  <img src="./assets/examples/case-1.jpg" width="32%">
+  <img src="./assets/examples/case-3.jpg" width="32%">
+  <img src="./assets/examples/case-7.jpg" width="32%">
+  <br>
+  <img src="./assets/examples/case-8.jpg" width="32%">
+  <img src="./assets/examples/case-2.jpg" width="32%">
+  <img src="./assets/examples/case-6.jpg" width="32%">
+</p>
 ## 使用方法
 
 1. 将整个 `photo-abstract-editorial` 文件夹复制到你的 Codex skills 目录，例如 `~/.codex/skills/`。
