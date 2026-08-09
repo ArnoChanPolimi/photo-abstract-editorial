@@ -4,7 +4,7 @@
 
 The skill includes the complete prompt in both Chinese and English.
 
-## 示例图片（原图均有本人拍摄）
+## 示例图片（原图均为本人拍摄）
 
 <table>
   <tr>
