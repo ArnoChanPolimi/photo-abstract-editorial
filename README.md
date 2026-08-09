@@ -1,4 +1,4 @@
-##声明
+## 声明
 Free for personal, educational and non-commercial use. Commercial use requires prior authorization. If you build something with these Skills, attribution and @AM. are greatly appreciated.
 
 # Photo Abstract Editorial
