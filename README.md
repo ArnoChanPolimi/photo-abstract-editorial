@@ -24,8 +24,8 @@ The skill includes the complete prompt in both Chinese and English.
   <img src="./assets/examples/case-1.jpg" width="32%">
   <img src="./assets/examples/case-7.jpg" width="32%">
   <br>
-  <img src="./assets/examples/case-2.jpg" width="32%">
   <img src="./assets/examples/case-6.jpg" width="32%">
+  <img src="./assets/examples/case-2.jpg" width="32%">
   <img src="./assets/examples/case-8.jpg" width="32%">
 </p>
 ## 使用方法
