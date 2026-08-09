@@ -4,6 +4,10 @@
 
 The skill includes the complete prompt in both Chinese and English.
 
+## 示例图片（原图均有本人拍摄）
+
+<img >
+
 ## 使用方法
 
 1. 将整个 `photo-abstract-editorial` 文件夹复制到你的 Codex skills 目录，例如 `~/.codex/skills/`。
