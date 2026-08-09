@@ -6,7 +6,7 @@ The skill includes the complete prompt in both Chinese and English.
 
 ## 示例图片（原图均有本人拍摄）
 
-<img >
+<img src="../assets/examples/case-1.JPG" style="zoom:50%">
 
 ## 使用方法
 
