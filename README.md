@@ -80,5 +80,6 @@ photo-abstract-editorial/
 `assets/examples` 中的图片仅用于理解预期输入类型；除非用户上传该图片本身，否则不要将其中的主题、色彩或构图复用于新的作品。
 请作者喝杯咖啡
 <p align="center">
-  
+  <img src="./pay/AliPay.jpg" width="32%">
+  <img src="./pay/WechatPay.jpg" width="32%">
 </p>
