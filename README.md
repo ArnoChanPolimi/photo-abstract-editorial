@@ -1,7 +1,7 @@
 ## 声明
 Free for personal, educational and non-commercial use. Commercial use requires prior authorization. If you build something with these Skills, attribution and @AM. are greatly appreciated.
 
-商业授权已不被允许，请各位不要私自部署，谢谢！
+商业授权已不被允许，请不要私自商用，谢谢！
 douyin: 12919593  xiaohongshu: Cclz_9
 
 在这里吐槽一下，真的很无语这几天，被人抄袭，甚至有人拿这个东西去卖，我真的无语！
