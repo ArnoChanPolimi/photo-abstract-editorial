@@ -15,7 +15,7 @@
 ## ⚠️ 声明
 
 > **Free for personal, educational and non-commercial use.**
-> Commercial use requires prior authorization.
+> Commercial use is not allowed.
 >
 > If you build something with these Skills, attribution and **@AM.** are greatly appreciated.
 
