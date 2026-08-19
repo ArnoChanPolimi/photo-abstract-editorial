@@ -47,10 +47,10 @@
 <p align="center">
   <img src="./assets/examples/case-3.jpg" width="32%" alt="Case 3">
   <img src="./assets/examples/case-1.jpg" width="32%" alt="Case 1">
-  <img src="./assets/examples/case-7.jpg" width="32%" alt="Case 7">
+  <img src="./assets/examples/case-10.jpg" width="32%" alt="Case 7">
   <br>
   <img src="./assets/examples/case-6.jpg" width="32%" alt="Case 6">
-  <img src="./assets/examples/case-2.jpg" width="32%" alt="Case 2">
+  <img src="./assets/examples/case-9.jpg" width="32%" alt="Case 2">
   <img src="./assets/examples/case-8.jpg" width="32%" alt="Case 8">
 </p>
 
