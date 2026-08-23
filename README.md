@@ -5,13 +5,8 @@
 **将一张照片转化为「原始摄影区域 + 抽象记忆面板 + 诗意英文标题」的竖向编辑作品**
 
 [![Codex Skill](https://img.shields.io/badge/Codex-Skill-000000?style=for-the-badge&logo=openai&logoColor=white)](https://github.com/ArnoChanPolimi/photo-abstract-editorial)
-[![Local Web App](https://img.shields.io/badge/Local_Web_App-Gradio-FF7C00?style=for-the-badge&logo=gradio&logoColor=white)](#方式三运行本地网页应用)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey?style=for-the-badge)](./LICENSE.md)
 [![Language](https://img.shields.io/badge/🌐_中文-English-blue?style=for-the-badge)](#)
-
-### [📖 安装并启动](#方式三运行本地网页应用) · [🌐 打开本地界面](http://127.0.0.1:7860)
-
-> “打开本地界面”需要先按下方说明启动应用。当前版本不会自动部署到公网。
 
 </div>
 
@@ -35,12 +30,7 @@
 
 ## 📖 关于本项目
 
-本项目现在包含两个互相配合的部分：
-
-1. **Codex Skill**：保留完整的中英文生成方法与审美约束。
-2. **本地 Gradio 网页应用**：普通用户无需编写 prompt，即可上传图片、选择多个风格与格式、批量生成并下载结果。
-
-它们都能将一张照片转化为「原始摄影区域 + 抽象记忆面板 + 诗意英文标题」的竖向编辑作品，或仅输出独立抽象面板。
+这是一个 **Codex Skill**，它能将一张照片转化为「原始摄影区域 + 抽象记忆面板 + 诗意英文标题」的竖向编辑作品，或仅输出独立抽象面板。
 
 - ✅ 保留照片的**真实内容**
 - ✅ 仅从照片本身提炼**空间关系、构图节奏和色彩关系**
@@ -97,47 +87,6 @@
 | 🇨🇳 中文 | [references/photo-abstract-editorial-prompt.zh-CN.md](references/photo-abstract-editorial-prompt.zh-CN.md) |
 | 🇬🇧 English | [references/photo-abstract-editorial-prompt.en.md](references/photo-abstract-editorial-prompt.en.md) |
 
-### 方式三：运行本地网页应用
-
-要求：Windows、Python 3.10 或更新版本。当前版本仅本地运行，不做公开部署，也不需要 API key。
-
-```powershell
-git clone https://github.com/ArnoChanPolimi/photo-abstract-editorial.git
-cd photo-abstract-editorial
-python -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe -m app.app
-```
-
-也可以双击 `run.bat`。浏览器默认打开 [http://127.0.0.1:7860](http://127.0.0.1:7860)。如需改变本地地址或端口，可复制 `.env.example` 的变量到当前 shell 环境；应用读取 `PAE_HOST` 和 `PAE_PORT`。
-
-网页支持：
-
-- 点击上传、拖拽上传或粘贴图片；也可输入完整本地图片路径。
-- 同时提供上传和路径时，**上传图片优先**，界面会明确提示。
-- 单选或多选六种稳定风格：Classic Editorial、Minimal、Travel / Architecture、Soft Memory、Bold Graphic、Museum Poster。
-- 输出模式：Composed Editorial、Abstract Panel Only、Both。
-- 输出格式可多选：PNG、JPEG、WEBP、PDF。
-- Auto / None / Custom 标题，Low / Medium / High 抽象程度，以及独立画布比例和透明背景选项。
-- 结果 Gallery、单文件下载及全部结果 ZIP 下载。
-
-每个任务保存在 `outputs/<时间戳-任务ID>/<输入文件名>/`。文件名采用：
-
-```text
-<输入名>__<风格>__<composed|abstract>.<格式>
-```
-
-每个结果 PDF 为单页；当一次任务包含多个结果且选择 PDF 时，会额外生成 `all-results.pdf` 多页汇总文件。`manifest.json` 保存任务设置、照片分析摘要与 preset 参数，ZIP 包含全部正式导出文件和 manifest。
-
-#### 本地生成架构与权衡
-
-- 原照片经 EXIF 方向校正和高质量等比缩放后由 Pillow 直接拼接，生成器不会重画照片区域。
-- 抽象面板由 NumPy 提取色彩、亮度、对比度与主要水平/垂直结构，再由 preset 驱动的 Pillow 图元确定性绘制；同一照片和风格会得到稳定倾向，而不是随机重复调用。
-- 第一版不调用图像模型，因此无需 API key、隐私更简单、批量输出可预测；代价是语义理解和抽象表现力低于完整的 AI/Codex 工作流。后续可在不改变 compositor 的前提下增加可选 AI 面板生成器。
-- 完整作品中的照片始终是位图。网页当前导出 PNG/JPEG/WEBP/PDF；Skill 对话工作流仍可按 `references/output-formats.md` 生成独立真矢量 SVG/PDF 母题。
-
----
-
 ## 🎛️ 可自由调整的部分
 
 这套提示词应当被视为**高质量起点**，而不是不可变的版式规范。请按自己的审美和项目需求修改以下参数：
@@ -171,21 +120,6 @@ photo-abstract-editorial/
 │   ├── photo-abstract-editorial-prompt.zh-CN.md
 │   ├── photo-abstract-editorial-prompt.en.md
 │   └── output-formats.md
-├── app/
-│   ├── app.py                       # 启动入口
-│   ├── ui.py                        # Gradio 界面
-│   ├── style_presets.py             # 六种结构化 preset
-│   ├── analyzer.py                  # 色彩与结构分析
-│   ├── compositor.py                # 抽象绘制与原图拼接
-│   ├── exporters.py                 # PNG/JPEG/WEBP/PDF/ZIP
-│   ├── generator.py                 # 任务编排
-│   ├── skill_loader.py              # Skill 与提示词加载
-│   └── utils.py                     # 路径、任务 ID 等工具
-├── tests/test_pipeline.py           # 端到端管线测试
-├── outputs/                         # 每次任务一个目录
-├── requirements.txt
-├── .env.example
-├── run.bat
 └── assets/examples/                 # 示例图片
 ```
 

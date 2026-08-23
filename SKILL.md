@@ -36,9 +36,3 @@ Read the appropriate full prompt before producing the image:
 Read [references/output-formats.md](references/output-formats.md) whenever selecting, generating, exporting, or explaining deliverable formats. Preserve the distinction between true vector artwork and a raster photograph embedded in an SVG or PDF.
 
 Use [assets/examples](assets/examples) as visual input examples only. Do not reuse their subject matter, colors, or composition unless the user supplies that exact image.
-
-## Local App Presets
-
-The local web application uses the same invariants through structured presets in [app/style_presets.py](app/style_presets.py). `Classic Editorial` is the default expression of this skill. The additional `Minimal`, `Travel / Architecture`, `Soft Memory`, `Bold Graphic`, and `Museum Poster` presets may change abstraction, mark language, saturation, contrast, panel proportion, identity cues, whitespace, line weight, and typography—but never the sole-source rule or faithful-photo rule.
-
-For local batch generation, keep the source photograph as original pixels and generate only the panel deterministically before compositing. This local renderer is a maintainable first-version interpretation of the skill, not an AI replacement for the full prompt-driven workflow.
