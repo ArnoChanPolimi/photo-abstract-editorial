@@ -1,6 +1,6 @@
 # Photo Abstract Editorial Prompt (English)
 
-Treat the uploaded image strictly as the sole source of content and as the original photograph. Create one complete editorial artwork composed of an **original-photo area + abstract memory panel + poetic title**. Do not create an abstract painting by itself and do not simply apply a filter to the photo.
+Treat the uploaded image strictly as the sole source of content and as the original photograph. Follow the selected product mode in [output-formats.md](output-formats.md): create a complete **original-photo area + abstract memory panel + poetic title** artwork, a standalone photo-derived abstract artwork, or a matched set containing both. Do not create an unrelated abstract painting and do not simply apply a filter to the photo.
 
 ## 1. Roles of the input image
 
@@ -65,7 +65,7 @@ Avoid regularized spacing. Let adjacent marks vary slightly in scale and positio
 
 ## 5. Adaptive joining of photo and abstract panel
 
-Create one complete vertical editorial work with a photographic area above and an ivory abstract panel below.
+For complete-editorial or matched-set mode, create one vertical editorial work with a photographic area above and an ivory abstract panel below. For standalone mode, omit the photograph and adapt the same motif to an independent ivory or transparent canvas as selected; do not merely crop it from the full composition.
 
 Do not mechanically make the two sections equal in height. Adapt the proportion to the source image's orientation, subject density, visual center of gravity, and negative space:
 
@@ -164,7 +164,7 @@ Abstract marks may have slightly natural edges and handmade irregularity, but ne
 
 ## 11. Output limits
 
-Output only one finished work joining the photograph and abstract panel.
+Create only the product mode selected through [output-formats.md](output-formats.md): complete editorial artwork, standalone abstract artwork, or a matched set. Export only the selected formats. In standalone mode, omit the source photograph while retaining its distilled relationships; use either an ivory canvas with optional title or a transparent title-free motif as selected. When SVG or vector PDF is requested, reconstruct the abstract marks and typography as true vector paths or primitives; do not embed, crop, or auto-trace the raster panel and describe it as vector. A full-work SVG or PDF necessarily contains the raster source photograph and is not fully vector.
 
 Apart from the final main title and optional subtitle, include absolutely no text, numbers, dates, serial numbers, location descriptions, color swatches, legends, signatures, logos, or watermarks.
 
