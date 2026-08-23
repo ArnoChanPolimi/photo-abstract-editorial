@@ -14,9 +14,9 @@ Create selected editorial or standalone abstract deliverables from one uploaded 
 3. Reconstruct the retained relationships below as a sparse abstract motif—not a thumbnail, trace, illustration, vector icon, or style transfer. Prefer relationships over silhouettes and preserve only the minimum recognition cues needed for distinctive subjects.
 4. Select the requested output mode from [references/output-formats.md](references/output-formats.md): complete editorial work, standalone abstract motif, or both. For the complete work, use an untextured uniform ivory lower panel and adapt the photo/panel proportions to the photograph rather than splitting it mechanically in half. For a standalone output, omit the photograph and preserve the same distilled relationships as an independent composition.
 5. Use one primary mark family and no more than two supporting families. Extract a muted palette solely from the photo; use generous whitespace and avoid invented decorative elements, colors, symbols, and symmetry.
-6. Create one original English title of two to five words, grounded in visible facts. Place it only on the abstract panel in a restrained editorial serif face. Add a short subtitle only when it adds meaning.
+6. Omit titles and all other text by default. Add a title only when the user explicitly requests one; then create one original English title of two to five words grounded in visible facts and place it only on the abstract panel in a restrained editorial serif face. Add a short subtitle only when explicitly requested.
 7. Before production, honor any output mode and file format the user requested. If either is unspecified, briefly offer the combined choices in [references/output-formats.md](references/output-formats.md); do not silently assume that the complete photo-plus-panel composition or a raster preview is the only deliverable.
-8. Return only the requested deliverables. Do not add design analysis, title options, labels, dates, logos, or watermarks to the artwork.
+8. Return only the requested deliverables. Unless the user explicitly requests a title, render no text at all. Never add design analysis, title options, labels, dates, logos, or watermarks to the artwork.
 
 ## Guardrails
 

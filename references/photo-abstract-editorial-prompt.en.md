@@ -1,6 +1,6 @@
 # Photo Abstract Editorial Prompt (English)
 
-Treat the uploaded image strictly as the sole source of content and as the original photograph. Follow the selected product mode in [output-formats.md](output-formats.md): create a complete **original-photo area + abstract memory panel + poetic title** artwork, a standalone photo-derived abstract artwork, or a matched set containing both. Do not create an unrelated abstract painting and do not simply apply a filter to the photo.
+Treat the uploaded image strictly as the sole source of content and as the original photograph. Follow the selected product mode in [output-formats.md](output-formats.md): create a complete **original-photo area + abstract memory panel** artwork, a standalone photo-derived abstract artwork, or a matched set containing both. Omit titles and all other text by default. Do not create an unrelated abstract painting and do not simply apply a filter to the photo.
 
 ## 1. Roles of the input image
 
@@ -113,9 +113,9 @@ Use:
 
 Accent colors must be important colors that truly exist in the photo and may appear only in a few key marks. Do not introduce neon colors, unsupported complementary colors, or several competing accents.
 
-## 8. Title naming
+## 8. Optional title naming
 
-From the photo's subject, spatial relationships, time, light, movement, and mood, create one original English title internally.
+Do not create or render a title by default. Apply this section only when the user explicitly requests a title. In that case, create one original English title internally from the photo's subject, spatial relationships, time, light, movement, and mood.
 
 The title must be faithful, clear, and elegant:
 
@@ -133,11 +133,11 @@ Prefer two to five English words. Choose one direction:
 
 Avoid travel-promotion titles, place descriptions, photographic jargon, empty words such as “Memory,” “Dream,” or “Moment,” and grand narratives unrelated to photo facts.
 
-Generate only one main title by default. Add a three-to-seven-word subtitle only if it adds a new layer of meaning rather than repeating the title. Render each title only once. Decide the final title internally, then render it accurately. Do not generate title options, explanatory copy, or any other text.
+When explicitly requested, generate only one main title. Add a three-to-seven-word subtitle only when the user explicitly requests a subtitle and it adds a new layer of meaning rather than repeating the title. Render each requested title only once. Decide the final title internally, then render it accurately. Do not generate title options, explanatory copy, or any other text.
 
-## 9. Title typography
+## 9. Optional title typography
 
-Place the title only on the ivory abstract panel, below or beside the abstract motif. Select its exact position according to lateral whitespace and overall balance.
+Apply this section only when the user explicitly requests a title. Place that title only on the ivory abstract panel, below or beside the abstract motif. Select its exact position according to lateral whitespace and overall balance.
 
 Adapt between these layouts:
 
@@ -166,6 +166,6 @@ Abstract marks may have slightly natural edges and handmade irregularity, but ne
 
 Create only the product mode selected through [output-formats.md](output-formats.md): complete editorial artwork, standalone abstract artwork, or a matched set. Export only the selected formats. In standalone mode, omit the source photograph while retaining its distilled relationships; use either an ivory canvas with optional title or a transparent title-free motif as selected. When SVG or vector PDF is requested, reconstruct the abstract marks and typography as true vector paths or primitives; do not embed, crop, or auto-trace the raster panel and describe it as vector. A full-work SVG or PDF necessarily contains the raster source photograph and is not fully vector.
 
-Apart from the final main title and optional subtitle, include absolutely no text, numbers, dates, serial numbers, location descriptions, color swatches, legends, signatures, logos, or watermarks.
+By default include absolutely no text. If the user explicitly requests a title or subtitle, include only that requested text and no numbers, dates, serial numbers, location descriptions, color swatches, legends, signatures, logos, or watermarks.
 
 Strictly avoid photo redrawing, scene reconstruction, generative outpainting, a filtered look, posterized photographs, vector tracing, complete illustration, regularized infographics, generic icons, dense decoration, fabricated content, fabricated symmetry, non-uniform backgrounds, realistic small objects, excessive architectural detail, neatly capsule-shaped people, title-option lists, and extra text.
